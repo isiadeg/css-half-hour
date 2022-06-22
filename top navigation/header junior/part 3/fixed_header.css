@@ -1,0 +1,46 @@
+.header{
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index:100000;
+    width:100vw;
+    padding:17px 40px;
+    background-color: wheat;
+    box-shadow:2px 2px 7px 3px rgb(225, 225, 225);
+}
+
+a.links{
+    color:black;
+    margin-right: 20px;
+    text-decoration: none;
+    display: none;
+   
+}
+
+.therest{
+    height:120vh;
+    padding-top:65px;
+}
+a.links:hover{
+    color: red;
+}
+a.active{
+    color:purple;
+    font-weight: bold;
+}
+.hamburger_icon{
+    display: block;
+}
+.hamburger_icon:hover~a.links{
+    display: block;
+    margin-top:20px;
+}
+@media only screen and (min-width:1024px){
+    .hamburger_icon{
+        display: none;
+    }
+    a.links{
+        display: inline-block;
+    }
+}
+
